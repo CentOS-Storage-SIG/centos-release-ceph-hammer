@@ -1,0 +1,19 @@
+# CentOS-Ceph-Hammer.repo
+#
+# Please see http://wiki.centos.org/SpecialInterestGroup/Storage for more
+# information
+
+[centos-ceph-hammer]
+name=CentOS-$releasever - Ceph Hammer
+baseurl=http://mirror.centos.org/centos/$releasever/storage/$basearch/ceph-hammer/
+gpgcheck=1
+enabled=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
+
+[centos-ceph-hammer-test]
+name=CentOS-$releasever - Ceph Hammer Testing
+baseurl=http://buildlogs.centos.org/centos/$releasever/storage/$basearch/ceph-hammer/
+gpgcheck=0
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
+
