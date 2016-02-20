@@ -14,7 +14,7 @@ Building the package can be done like this:
                --define "dist .el7.centos" \
                centos-release-ceph-hammer.spec
 
-    $ koji -p centos \
+    $ koji -p cbs \
            build core7-extras-common-el7.centos \
            centos-release-ceph-hammer-1.0-3.el7.centos.src.rpm
 
