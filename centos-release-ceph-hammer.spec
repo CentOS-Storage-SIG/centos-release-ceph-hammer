@@ -1,7 +1,7 @@
 Summary: Ceph Hammer packages from the CentOS Storage SIG repository
 Name: centos-release-ceph-hammer
 Version: 1.0
-Release: 2%{?dist}
+Release: 3%{?dist}
 License: GPLv2
 URL: http://wiki.centos.org/SpecialInterestGroup/Storage
 Source0: CentOS-Ceph-Hammer.repo
@@ -28,6 +28,9 @@ install -D -m 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d/CentOS-Ceph-
 %config(noreplace) %{_sysconfdir}/yum.repos.d/CentOS-Ceph-Hammer.repo
 
 %changelog
+* Sat Feb 20 2016 François Cami <fcami@fedoraproject.org> - 1.0-3
+- Bump release
+
 * Sat Feb 06 2016 François Cami <fcami@fedoraproject.org> - 1.0-2
 - Bump release
 
