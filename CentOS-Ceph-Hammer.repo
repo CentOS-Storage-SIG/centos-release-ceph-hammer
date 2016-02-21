@@ -17,3 +17,16 @@ gpgcheck=0
 enabled=0
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
 
+[centos-ceph-hammer-debuginfo]
+name=CentOS-$releasever - Ceph Hammer DebugInfo
+baseurl=http://debuginfo.centos.org/centos/$releasever/storage/$basearch/ceph-hammer/
+gpgcheck=0
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
+
+[centos-ceph-hammer-source]
+name=CentOS-$releasever - Ceph Hammer Source
+baseurl=http://vault.centos.org/centos/$releasever/storage/Source/ceph-hammer/
+gpgcheck=0
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
