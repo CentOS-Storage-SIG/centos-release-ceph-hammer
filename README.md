@@ -1,13 +1,13 @@
 centos-release-ceph-hammer provides the YUM repository file for packages of the
 CentOS Storage SIG that are used with Ceph Hammer (0.94.x).
 
-This package needs to get build against the following targets so that the
+This package needs to get built against the following targets so that the
 packages land at the right tag for inclusion in CentOS Extras:
 
  - core7-extras-common-el7.centos (tag: core7-extras-common-candidate)
 
-Building the package can be done like this:
 
+Building the package can be done like this:
 
     $ rpmbuild -bs
                --define "_sourcedir $PWD" --define "_srcrpmdir $PWD" \
@@ -16,5 +16,5 @@ Building the package can be done like this:
 
     $ koji -p cbs \
            build core7-extras-common-el7.centos \
-           centos-release-ceph-hammer-1.0-3.el7.centos.src.rpm
+           centos-release-ceph-hammer-1.0-4.el7.centos.src.rpm
 
